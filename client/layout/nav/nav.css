@@ -1,0 +1,12 @@
+.header-actions li a {
+    text-decoration : none;
+}
+
+.header-actions li a:hover {
+    color : #337ab7 !important;
+}
+
+#login-buttons a {
+	color           : inherit !important;
+	text-decoration : none !important;
+}

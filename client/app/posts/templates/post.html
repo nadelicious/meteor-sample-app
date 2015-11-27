@@ -1,0 +1,26 @@
+<template name="post">
+    <article class="post-container">
+        <div class="col-md-3 image-container">
+            <img src="{{fileLocation}}" alt="photo">
+        </div>
+        <div class="col-md-9 details-container">
+            <a href="javascript:void(0)" class="title">{{title}}</a>
+            <span class="date text-muted italic">{{ formatDate updatedAt}}</span>
+            <p> {{description}}</p>
+        </div>
+        <div class="username">
+            <span class="text-muted">- {{creatorName}}</span>
+        </div>
+        {{#if isCreator creator }}
+            <div class="user-actions">
+                 <span class="pull-right pointer show-delete-post-modal-btn">Delete</span>
+                <span class="pull-right pointer show-edit-post-modal-btn">Edit</span>
+                <div class="clearfix"></div>
+            </div>
+        {{/if}}
+        <div class="clearfix"></div>
+    </article>
+    <hr>
+</template>
+
+

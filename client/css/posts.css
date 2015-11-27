@@ -1,0 +1,95 @@
+/** css declarations **/
+
+.container {
+    width : 700px !important;
+}
+
+.navbar-brand {
+    font-size : 13px !important;
+}
+
+.margin-top-wide {
+    margin-top : 20px;
+}
+
+.post-container {
+    background : white;
+    max-height : 140px;
+    min-height : 140px;
+    margin-top : 20px;
+     position  : relative;
+}
+
+.post-container .image-container img {
+    width     : 100%;
+    max-width : 100%;
+    height    : 135px;
+}
+
+.post-container .details-container {
+    padding-left : 10px;
+}
+
+.post-container .details-container a.title {
+    color       : #428bca;
+    font-size   : 12px;
+    font-weight : 600;
+    display     : block;
+}
+
+.post-container .details-container span.date {
+    font-size  : 10px;
+}
+
+.post-container .details-container p {
+    margin-top : 5px;
+    color      : #666;
+    font-size  : 11px;
+}
+
+.post-container .user-actions {
+    position : absolute;
+    bottom   : 0;
+    right    : 12px;
+    height   : 20px;
+}
+
+.post-container .username {
+    position : absolute;
+    bottom   : 0;
+    left     : 175px;
+    height   : 20px;
+}
+
+.post-container .username  span {
+    font-size : 11px;
+}
+
+.pointer {
+    cursor : pointer;
+}
+
+.modal-img {
+    width  : 138px;
+    height : 135px;
+}
+
+
+span.show-edit-post-modal-btn, span.show-delete-post-modal-btn {
+    display      : block;
+    margin-right : .5em;
+      color      : #666;
+      font-size  : 11px;
+}
+
+span.show-edit-post-modal-btn:hover {
+    color : #428bca;
+}
+
+span.show-delete-post-modal-btn:hover {
+    color : red;
+}
+
+span.required {
+    color : red;
+}

@@ -1,0 +1,22 @@
+<template name="pagination">
+    {{#if isPaginate }}
+        <nav>
+            <ul class="pagination pagination-sm">
+                <li class="{{getDisabledState 'prev'}}">
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                {{#each getPages }}
+                    <li class="{{getActiveState this}}"><a href="#" aria-label="Page">{{this}}</a></li>
+                {{/each}}
+                <li class="{{getDisabledState 'next'}}">
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    {{/if}}
+</template>
+

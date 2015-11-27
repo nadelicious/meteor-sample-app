@@ -1,0 +1,30 @@
+<template name="posts">
+    <div class="col-md-12">
+        <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="search by title" name="searchTitle">
+        </div>
+
+        <div class="col-md-6">
+             {{#if currentUser}}
+                <button class="btn btn-success pull-right" id="show-create-modal-btn">Create</button>
+            {{/if}}
+        </div>
+        <div class="clearfix"></div>
+
+        <section>
+            {{#if hasPostsCount}}
+                {{#each posts}}
+                    {{>post}}
+                {{/each}}
+            {{else}}
+                 <p class="alert alert-danger margin-top-wide"> No results. </p>
+            {{/if}}
+        </section>
+        <div class="clearfix"></div>
+        {{>pagination}}
+    </div>
+
+    {{>addpost}}
+    {{>editpost}}
+    {{>deletepost}}
+</template>
